@@ -1,0 +1,31 @@
+Команды Git
+
+1. Конфигурирование 
+git config --global user.email "epfomin@gmail.com"
+
+git config --global user.name "epfomin"
+
+2. Добавление ВСЕХ файлов каталога в индекс (отслеживание)
+git add .
+
+3. ПРИНУДИТЕЛЬНОЕ (-f) перемещение индексируемых файлов из локального в удаленный репозиторий
+git push -f aobrig_test master
+
+в дальнейшем помещение файлов на удаленный репозиторий ТОЛЬКО без команды -f
+git push aobrig_test master
+
+только первый раз, когда еще нет дерева на удаленном репозитории
+
+4. Изменение редактора (если необходимо)
+
+git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
+git config --list
+
+5. Статус
+
+git status
+
+6. Создание коммита
+
+git commit -a
